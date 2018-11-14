@@ -1,6 +1,11 @@
 class Artist
   attr_accessor :name
   attr_reader :songs
+  @@song_count = 0
+
+  def self.song_count
+    @@song_count
+  end
 
   def initialize(name)
     @name = name
