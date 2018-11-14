@@ -20,7 +20,10 @@ class Artist
   #        undefined method `add_song_by_name' for #<Artist:0x000000012fcfa0 @name="Adele", @songs=[]>
   #      # ./spec/artist_spec.rb:39:in `block (4 levels) in <top (required)>'
   def add_song_by_name(song_name)
-    
+    # we need to make an association
+    # we need to add the song to the artist
+    song = Song.new(song_name)
+    self.add_song(song)
   end
 
 end
