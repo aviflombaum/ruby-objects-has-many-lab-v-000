@@ -12,6 +12,7 @@ class Artist
   #NoMethodError:
   # undefined method `add_song' for #<Artist:0x00000001920f30 @name="Adele", @songs=[]>
   def add_song(song)
+    @songs << song
   end
 
 end
