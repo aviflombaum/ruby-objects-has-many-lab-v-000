@@ -1,9 +1,10 @@
 class Artist
-  attr_accessor :name, :songs
+  attr_accessor :name
+  attr_reader :songs
 
   def initialize(name)
     @name = name
-
+    @songs = []
   end
 
   #Artist #name #add_song takes in an argument of a song and adds that song to the artist's collection and tells
