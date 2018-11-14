@@ -14,7 +14,8 @@ class Artist
   # undefined method `add_song' for #<Artist:0x00000001920f30 @name="Adele", @songs=[]>
   def add_song(song)
     @songs << song
-    song.artist = self
+    
+    song.artist = self # Reciprocity
   end
 
 end
