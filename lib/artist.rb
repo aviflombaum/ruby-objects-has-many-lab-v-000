@@ -7,12 +7,13 @@ class Artist
   def self.all
     @@artists
   end
+
   def self.total_artists
     @@artists.size
   end
 
   def self.song_count
-    @@song_count.size
+    Artist.all.collect{|a| a.songs}.flatten.sum
   end
 
   def initialize(name)
